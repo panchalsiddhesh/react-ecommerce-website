@@ -1,0 +1,54 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 1em;
+}
+
+.navbar__rightLinks {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.link {
+    text-decoration: none;
+    color: #000;
+    margin: 1em;
+}
+
+.link__hover {
+    display: inline-block;
+}
+
+.link__hover:hover {
+    color: #2B580C;
+}
+
+.link__hover::after{
+    display: block;
+    content: "";
+    margin: auto;
+    width: 0;
+    height: 2px;
+    background-color: #2B580C;
+    transition: width 0.25s ease;
+}
+
+.link__hover:hover::after {
+    width: 100%;
+}
+
+.logo__span {
+    color: #2B580C;
+}
+
+.logo {
+    font-weight: bold;
+}
+
+@media (max-width: 500px) {
+    .navbar__rightLinks {
+        font-size: 0.75rem;
+    }
+}
